@@ -1,8 +1,10 @@
 {
-  "name": "index",
+  "name": "fiyomain-api",
   "version": "1.0.0",
   "description": "Flexiyo Main Service",
   "main": "index.js",
+  "module": "index.js",
+  "repository": "https://github.com/kaushal-krishna/fiyomain-api",
   "scripts": {
     "format": "npx prettier . --write",
     "push": "git add . && git commit -m date && git push origin master",
@@ -18,6 +20,7 @@
     "cors": "^2.8.5",
     "express": "^4.19.2",
     "fs": "^0.0.1-security",
-    "nodemon": "^3.1.0"
+    "nodemon": "^3.1.0",
+    "serverless-http": "^3.2.0"
   }
 }

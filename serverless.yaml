@@ -1,0 +1,29 @@
+service: fiyomain-api
+
+provider:
+  name: aws
+  runtime: nodejs18.x
+  region: us-east-1
+  stage: dev
+
+functions:
+  app:
+    handler: handler.handler
+    events:
+      - http:
+          path: /
+          method: get
+      - http:
+          path: /feed
+          method: get
+
+plugins:
+  - serverless-offline # Optional: for local testing
+
+package:
+  exclude:
+    - node_modules/**
+    - .gitignore
+    - .git/**
+    - README.md
+    - serverless.yml
