@@ -4,7 +4,7 @@
   "description": "Flexiyo Main Service",
   "main": "index.js",
   "module": "index.js",
-  "repository": "https://github.com/kaushal-krishna/fiyomain-api",
+  "repository": "https://github.com/kaushal-krishna/fiyomain-service",
   "scripts": {
     "format": "npx prettier . --write",
     "push": "git add . && git commit -m date && git push origin master",
