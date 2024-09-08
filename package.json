@@ -17,6 +17,9 @@
   "author": "Kaushal Krishna",
   "license": "ISC",
   "dependencies": {
+    "@aws-sdk/client-dynamodb": "^3.645.0",
+    "@aws-sdk/util-dynamodb": "^3.645.0",
+    "aws-sdk": "^2.1691.0",
     "cors": "^2.8.5",
     "express": "^4.19.2",
     "fs": "^0.0.1-security",

@@ -1,21 +1,22 @@
-const express = require('express');
+import express from "express";
+import dotenv from "dotenv";
+import feedRouter from "./routes/feed/index.js";
+
+dotenv.config();
+
 const app = express();
+app.use(express.json());
 
-// Sample data for the feed
-const feedData = [
-    { id: 1, content: 'First feed item' },
-    { id: 2, content: 'Second feed item' },
-    { id: 3, content: 'Third feed item' },
-];
+app.use("/feed", feedRouter);
 
-// Define the /feed route
-app.get('/feed', (req, res) => {
-    res.json(feedData);
+app.get("/", (req, res) => {
+  res.send("Hello from Lambda!");
 });
 
-// Optional: Define other routes
-app.get('/', (req, res) => {
-    res.send('Hello from Lambda!');
+const PORT = process.env.PORT || 8080;
+
+app.listen(PORT, () => {
+  console.log(`Server is running on port ${PORT}`);
 });
 
-module.exports = app;
+export default app;
