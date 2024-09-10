@@ -1,4 +1,3 @@
-
 # Project Structure
 
 ```
@@ -12,10 +11,10 @@ project-root/
 │   └── `index.js`                 - PostgreSQL (pgdb) client setup
 │
 ├── **routes/**                    # API routing for various endpoints
-│   ├── **feed/** 
-│   │   └── `index.js`             - Feed-related routes
-│   └── **db/**
-│       └── `index.js`             - DynamoDB-related routes
+│   ├── **feed/**
+│   │   ├── `index.js`             - Feed-related routes
+│   │   ├── **db/**
+│   │   └── `index.js`             - DynamoDB-related routes
 │
 ├── **services/**                  # Core business logic and services
 │   ├── **feed/**                  # Feed-specific services
