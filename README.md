@@ -14,7 +14,7 @@ project-root/
 │   ├── **feed/**
 │   │   ├── `index.js`             - Feed-related routes
 │   │   ├── **db/**
-│   │   │  └── `index.js`             - DynamoDB-related routes
+│   │   │   └── `index.js`             - DynamoDB-related routes
 │
 ├── **services/**                  # Core business logic and services
 │   ├── **feed/**                  # Feed-specific services
